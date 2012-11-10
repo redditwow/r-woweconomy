@@ -23,6 +23,24 @@
     vertical-align: middle !important;
 }
 
+.author.friend, .author.friend:hover {
+  background: none !important;
+  border: none !important;
+}
+
+.author.friend:hover {
+  text-decoration: underline;
+}
+
+.author.friend::after {
+  content: url('%%friend-icon%%');
+  margin-left: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 16px;
+}
+
 p.tagline, .tagline { height: 18px; margin: 4px 0 0; border: 0px; }
 .tagline a:hover, .fancy-toggle-button a:hover { border-bottom: 0px; }
 
@@ -69,19 +87,56 @@ p.tagline, .tagline { height: 18px; margin: 4px 0 0; border: 0px; }
 /** End of flairgen output **/
 
 // username styling based on faction / class
-.flair-alliance+.author { .colors(@alliance) }
-.flair-horde+.author { .colors(@horde) }
-.flair-deathknight+.author,.flair-alliance-deathknight+.author,.flair-horde-deathknight+.author { .colors(@deathknight) }
-.flair-druid+.author,.flair-alliance-druid+.author,.flair-horde-druid+.author { .colors(@druid) }
-.flair-hunter+.author,.flair-alliance-hunter+.author,.flair-horde-hunter+.author { .colors(@hunter) }
-.flair-mage+.author,.flair-alliance-mage+.author,.flair-horde-mage+.author { .colors(@mage) }
-.flair-monk+.author,.flair-alliance-monk+.author,.flair-horde-monk+.author { .colors(@monk) }
-.flair-paladin+.author,.flair-alliance-paladin+.author,.flair-horde-paladin+.author { .colors(@paladin) }
-.flair-priest+.author,.flair-alliance-priest+.author,.flair-horde-priest+.author { .colors(@priest) }
-.flair-rogue+.author,.flair-alliance-rogue+.author,.flair-horde-rogue+.author { .colors(@rogue) }
-.flair-shaman+.author,.flair-alliance-shaman+.author,.flair-horde-shaman+.author { .colors(@shaman) }
-.flair-warlock+.author,.flair-alliance-warlock+.author,.flair-horde-warlock+.author { .colors(@warlock) }
-.flair-warrior+.author,.flair-alliance-warrior+.author,.flair-horde-warrior+.author { .colors(@warrior) }
+.flair-alliance+.author,.flair-alliance+.author.friend { 
+    .colors(@alliance) 
+}
+.flair-horde+.author,.flair-horde+.author.friend { 
+    .colors(@horde) 
+}
+.flair-deathknight+.author,.flair-alliance-deathknight+.author,.flair-horde-deathknight+.author,
+.flair-deathknight+.author.friend,.flair-alliance-deathknight+.author.friend,.flair-horde-deathknight+.author.friend { 
+    .colors(@deathknight) 
+}
+.flair-druid+.author,.flair-alliance-druid+.author,.flair-horde-druid+.author,
+.flair-druid+.author.friend,.flair-alliance-druid+.author.friend,.flair-horde-druid+.author.friend { 
+    .colors(@druid) 
+}
+.flair-hunter+.author,.flair-alliance-hunter+.author,.flair-horde-hunter+.author,
+.flair-hunter+.author.friend,.flair-alliance-hunter+.author.friend,.flair-horde-hunter+.author.friend { 
+    .colors(@hunter) 
+}
+.flair-mage+.author,.flair-alliance-mage+.author,.flair-horde-mage+.author,
+.flair-mage+.author.friend,.flair-alliance-mage+.author.friend,.flair-horde-mage+.author.friend { 
+    .colors(@mage) 
+}
+.flair-monk+.author,.flair-alliance-monk+.author,.flair-horde-monk+.author,
+.flair-monk+.author.friend,.flair-alliance-monk+.author.friend,.flair-horde-monk+.author.friend { 
+    .colors(@monk) 
+}
+.flair-paladin+.author,.flair-alliance-paladin+.author,.flair-horde-paladin+.author,
+.flair-paladin+.author.friend,.flair-alliance-paladin+.author.friend,.flair-horde-paladin+.author.friend { 
+    .colors(@paladin) 
+}
+.flair-priest+.author,.flair-alliance-priest+.author,.flair-horde-priest+.author,
+.flair-priest+.author.friend,.flair-alliance-priest+.author.friend,.flair-horde-priest+.author.friend { 
+    .colors(@priest) 
+}
+.flair-rogue+.author,.flair-alliance-rogue+.author,.flair-horde-rogue+.author,
+.flair-rogue+.author.friend,.flair-alliance-rogue+.author.friend,.flair-horde-rogue+.author.friend { 
+    .colors(@rogue) 
+}
+.flair-shaman+.author,.flair-alliance-shaman+.author,.flair-horde-shaman+.author,
+.flair-shaman+.author.friend,.flair-alliance-shaman+.author.friend,.flair-horde-shaman+.author.friend { 
+    .colors(@shaman) 
+}
+.flair-warlock+.author,.flair-alliance-warlock+.author,.flair-horde-warlock+.author,
+.flair-warlock+.author.friend,.flair-alliance-warlock+.author.friend,.flair-horde-warlock+.author.friend.friend { 
+    .colors(@warlock) 
+}
+.flair-warrior+.author,.flair-alliance-warrior+.author,.flair-horde-warrior+.author,
+.flair-warrior+.author.friend,.flair-alliance-warrior+.author.friend,.flair-horde-warrior+.author.friend { 
+    .colors(@warrior) 
+}
 
 // thread submitter styling based on faction / class
 .flair-alliance+.submitter { 
