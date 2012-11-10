@@ -5,3 +5,12 @@
     color: @color !important;
     background-color: @background-color !important;
 }
+
+.flaircolors(@color, @bgcolor) {
+    +.author, +.author.friend { 
+        .colors(@color);
+    }
+    +.submitter, +.submitter.friend {
+        .colors(@color, @bgcolor);
+    }
+}
