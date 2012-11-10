@@ -7,38 +7,34 @@
     background: none;
     border: 0;
     border-radius: 0;
+    &:after {
+        .flair-sprite;
+        display: inline-block;
+        margin-left: 3px;
+        vertical-align: middle;
+        height: 18px;
+    }
+    +.author {
+        font-weight: bold !important;
+        padding: 4px 5px 4px 2px !important;
+        vertical-align: middle !important;
+    }
 }
 
-.flair-after {
-    .flair-sprite;
-    display: inline-block;
-    margin-left: 3px;
-    vertical-align: middle;
-    height: 18px;
-}
-
-.flair+.author {
-    font-weight: bold !important;
-    padding: 4px 5px 4px 2px !important;
-    vertical-align: middle !important;
-}
-
-.author.friend, .author.friend:hover {
-  background: none !important;
-  border: none !important;
-}
-
-.author.friend:hover {
-  text-decoration: underline;
-}
-
-.author.friend::after {
-  content: url('%%friend-icon%%');
-  margin-left: 3px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 12px;
-  height: 16px;
+.author.friend {
+    background: none !important;
+    border: none !important;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:after {
+        content: url('%%friend-icon%%');
+        margin-left: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 16px;
+    }
 }
 
 p.tagline, .tagline { height: 18px; margin: 4px 0 0; border: 0px; }
@@ -87,7 +83,6 @@ p.tagline, .tagline { height: 18px; margin: 4px 0 0; border: 0px; }
 /** End of flairgen output **/
 
 // username styling for factions / classes
-
 .flair-alliance { .flaircolors(@alliance, @flairname-lightbg); }
 .flair-horde { .flaircolors(@horde, @flairname-lightbg); }
 .flair-deathknight, .flair-alliance-deathknight, .flair-horde-deathknight { .flaircolors(@deathknight, @flairname-lightbg) }
