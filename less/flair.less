@@ -97,6 +97,20 @@ p.tagline, .tagline { height: 18px; margin: 4px 0 0; border: 0px; }
 .flair-warlock, .flair-alliance-warlock, .flair-horde-warlock { .flaircolors(@warlock, @flairname-lightbg) }
 .flair-warrior, .flair-alliance-warrior, .flair-horde-warrior { .flaircolors(@warrior, @flairname-lightbg) }
 
+// normal usernames
+.author {
+    color: black;
+}
+
+// moderators
+.author.moderator {
+    color: black !important;
+    vertical-align: baseline !important;
+    border-radius: 4px !important;
+    background: #C7FFEE !important;
+    border: 2px solid #008C61 !important;
+}
+
 // goldblogger flair
 .flair-goldblogger + .author {
     color: black !important;
