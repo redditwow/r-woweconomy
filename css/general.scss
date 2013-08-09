@@ -1,0 +1,263 @@
+/***
+ * General.css
+ * Things that just don't fit anywhere else and don't need their ownfile
+ */
+body {
+  background-color:#333;
+  background-image: url('%%body-background%%');
+  color: #d2bfa4;
+  position:relative;
+  /* HACKY HACKY HACKY HACK */
+  z-index:-2;
+}
+
+a {
+  color: #008467;
+}
+
+.infobar {
+  margin-right: 440px;
+}
+
+
+/* Submission page */
+#link-desc, #text-desc {
+  font-size: 0;
+  padding: 15px;
+}
+
+#link-desc::after {
+  content: "Please read the sidebar before submitting your thread. If your submission fits any of our related subreddits, it doesn't belong here. Help us keep /r/wow tidy! Thank you.";
+  font-weight: bold;
+  font-size: small;
+}
+
+#text-desc::after {
+  content: "Please read the sidebar before submitting your thread. If your submission fits any of our related subreddits, it doesn't belong here. Help us keep /r/wow tidy! Thank you.";
+  font-weight: bold;
+  font-size: small;
+}
+
+/* End of Submission page */
+
+.markdownEditor a {
+  color: #008467 !important;
+}
+
+#userbarToggle {
+  color: #FFB100 !important;
+  background-color: #1D1D1D !important;
+  border-right: 1px solid #000000 !important;
+  padding-left: 4px;
+}
+
+#RESShortcutsEditContainer {
+  position: absolute !important;
+  right: 0px !important;
+  top: 40px !important;
+  background-color: #1D1D1D !important;
+}
+
+#RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
+  color: #FFB100 !important;
+  background-color: #1D1D1D !important;
+}
+
+.RESSubscriptionButton, .RESSubscriptionButton:hover {
+  background: #226D0E !important;
+  border: 1px solid #447023 !important;
+  color: #FFFFFF !important;
+}
+
+.RESSubscriptionButton.unsubscribe, .RESSubscriptionButton.unsubscribe:hover {
+  background: #630517 !important;
+  border: 1px solid #6D0110 !important;
+  color: #FFFFFF !important;
+}
+
+
+
+
+/* Markdown help table */
+.usertext table.markhelp {
+  background: #1B1108;
+  color: #B39265 !important;
+}
+
+.usertext table.markhelp a {
+  color: #008467 !important;
+}
+
+.usertext table.markhelp, .usertext .markhelp td, .usertext .markhelp tr {
+  border: 1px solid #2C180D;
+}
+
+.usertext table.markhelp tbody tr:first-child {
+  color: #E2C7A3 !important;
+  background: #070502 !important;
+}
+
+/* Usertext crazy margin fix */
+
+.usertext-edit {padding:0 1px;}
+
+
+/* Markup changes */
+blockquote {
+  border-left: 2px solid #FFB100 !important;
+}
+
+/* Author defaults */
+.tagline a {
+    color: #008467;
+}
+
+/* Footer */
+.footer {
+  color: #B39265;
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid #2C180D !important;
+  background-color: #1C0F09 !important;
+}
+
+.flat-vert.title {
+  color: #B39265;
+}
+
+.footer a, .bottommenu a {
+  color: #008467 !important;
+}
+
+.footer .col {
+  border-left: 1px solid #B39265;
+}
+
+.bottommenu {
+  color: #B39265;
+}
+
+/* /r/wow/submit styling */
+
+.roundfield, .content.submit .roundfield.info-notice {
+  background-color: #221409;
+  border:none;
+}
+
+.roundfield textarea, .roundfield input[type="text"], 
+.roundfield input[type="url"],
+.roundfield input[type="password"], .roundfield input[type="number"],
+.linefield textarea, .linefield input[type="text"], 
+.linefield input[type="password"], .linefield input[type="number"] {
+  font-size: 100%;
+  width: 492px;
+  padding: 3px;
+  margin: 0;
+  border: 3px double #2C180D;
+  background: #1B1108;
+  color: #E2C7A3;
+}
+
+#suggested-reddits a {
+  color: #008467 !important;
+}
+
+#url-field button {
+  height: 30px;
+  border: 1px solid #2C180D;
+  background: #1B1108;
+  color: #FFB100;
+  border-radius: 4px;
+  padding: 0 20px;
+  text-transform: capitalize;
+  display: block;
+  line-height: 30px;
+}
+
+#url-field button:hover {
+  background: #2f1D0E;
+  cursor: pointer;
+}
+
+.formtabs-content {
+  border: none;
+  padding-top: 0px;
+}
+
+.tabmenu.formtab .selected a {
+  background-color: #B39265;
+  border: none;
+}
+
+.tabmenu.formtab a {
+  padding: 0px 12px;
+  border: 1px solid #2C180D;
+  border-bottom: none;
+  background: #221409;
+  color: #B39265;
+}
+
+.content h1 a {
+  color: #008467;
+}
+
+/* /r/wow/about/stylesheet */
+
+.sheets {
+  margin-right: 500px;
+}
+
+.sheets textarea {
+  width: 100% !important;
+}
+
+.menuarea {
+  margin:5px 40px;
+  }
+
+
+/* Search page settings */
+
+.searchpane {
+  margin:25px 418px 5px 0;
+  background-color:#311c0f;
+  }
+.raisedbox {
+  border:1px solid #010c0f;
+  }
+
+/* Moderator Tools */
+
+.linefield {
+  background-color: #221409;
+  border: none;
+  color: #D2BFA4;
+}
+
+.thing .title {
+  color: #008467;
+}
+
+/* Fucking WoWWiki */
+
+a[href*='wowwiki.com']:after {
+    color: red;
+    content: " You have linked to WoWWiki which is deprecated. Please link to the correct page on Wowpedia.org instead.";
+}
+
+/* Report function needs a warning. */
+
+.report-button:hover:before{
+    position: absolute;
+    display: block;
+    z-index: 80;
+    padding: 2px 4px;
+    background-color: #B94A48;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: bold;
+    content: "Please only report posts that actually violate the subreddit's rules.";
+    margin-top:2em;
+}
+
+.popup { z-index:1001 !important; } 

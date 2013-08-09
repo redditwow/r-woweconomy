@@ -1,0 +1,25 @@
+/***
+ * Countdown.css
+ * -- The countdown for mists of pandaria.
+ * -- To update, just upload a new image named countdown
+ */
+/** +++ COUNTDOWN STARTS +++ **/
+
+/* Mists of Pandaria sidebar */
+.side h5 a {
+  background:url('%%patch-logo%%') no-repeat center top;
+  width:235px;
+  height:100px;
+  display:block;
+  position:absolute;
+  top:242px;
+  right:51px;
+  z-index:100;
+  text-indent:-999em;
+}
+
+.side h5 a:hover {
+  background-position:center bottom;
+  }
+
+/** +++ COUNTDOWN ENDS +++ */
