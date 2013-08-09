@@ -1,0 +1,21 @@
+.comment a.author.moderator, .comment a.author.moderator:visited {
+    color: #FFFFFF !important;
+    background-color: #228822 !important;
+    border-radius: 3px;
+}
+
+.author.moderator, .comment .author.moderator {
+    color: #000000 !important;
+    border-radius: 4px !important;
+    background: #8CE28C !important;
+    border: 2px solid #228822 !important;
+    padding: 1px 3px !important;
+}
+
+.flair-goldblogger+.author, .comment .flair-goldblogger+.author {
+    color: #000000 !important;
+    border-radius: 4px !important;
+    background: #FFEDC4 !important;
+    border: 2px solid #FFB100 !important;
+    padding: 1px 3px !important;
+}
